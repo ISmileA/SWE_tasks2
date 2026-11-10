@@ -44,6 +44,5 @@
   "scripts/setup_python_linux.sh": "8124508fd6da9dde851abb02c7c3e26dd2eb9ba723afd8c6d9583fd14781a959",
   "scripts/setup_sandbox.sh": "fe94658f446d1b5d04f27b382d5dcff977a7cc46b1faa994a6584925e64b8c83",
   "scripts/smoke_api.py": "7a5196dbfa4354c6447262643ff10b7e34a19d04748e5be35810a99f04bffc64",
-  "scripts/train_eval.py": "a3b3143bc814daf96d15263e23cbfb5685ea64fdcddf836a3d66aa42119a5248",
-  "scripts/verify_delivery.py": "592fbbc3365eb3b0368d40bd83e929024b942485026e4167111f251b97bffa94"
+  "scripts/train_eval.py": "a3b3143bc814daf96d15263e23cbfb5685ea64fdcddf836a3d66aa42119a5248"
 }

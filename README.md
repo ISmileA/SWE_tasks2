@@ -87,7 +87,6 @@ wsl -d Ubuntu-22.04 --cd /mnt/c/KFU/DM/Task2 -- bash deploy/sandbox.sh -m script
 
 ## Где смотреть результат
 
-- `output/pdf/CineAgents_отчет.pdf` — отчёт с описанием системы и результатами.
 - `docs/RESEARCH.md` — обоснование и ограничения со ссылками.
 - `docs/DEFENSE.md` — подготовка к защите и вопросы.
 - `docs/REQUIREMENTS.md` — соответствие исходному ТЗ.

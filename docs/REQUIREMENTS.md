@@ -39,7 +39,7 @@
 | Production-проблемы и компромиссы | Latency, drift, availability, failure, auth, data poisoning, scale | docs/RESEARCH.md / PDF |
 | ML-метрики | P/R/NDCG/HitRate/MRR@10, coverage, diversity, novelty, cohorts, bootstrap | artifacts/recsys_results.json, per_user.csv, bootstrap.json |
 | Бизнес-метрики и мониторинг | CTR/play rate/retention/watch-through, A/B design, infra/LLM monitoring | Определены; нет заявлений о несуществующем A/B |
-| PDF с зафиксированным результатом | output/pdf/CineAgents_отчет.pdf | Описание системы, результаты, ограничения и диаграммы |
+| PDF с зафиксированным результатом | Отчёт сдаётся отдельным файлом | Описание системы, результаты, ограничения и диаграммы |
 | Обязательная ссылка на репозиторий | Исходники сохранены в локальном Git | Ссылку необходимо добавить перед сдачей |
 
 ## Что нельзя утверждать при сдаче

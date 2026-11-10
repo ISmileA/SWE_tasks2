@@ -1,0 +1,106 @@
+[
+  {
+    "model": "gemma3:4b",
+    "case": "arithmetic",
+    "category": "reasoning",
+    "expected": {
+      "answer": 323
+    },
+    "result": null,
+    "passed": false,
+    "json_success": false,
+    "seconds": 0.42890112199984287,
+    "error": "HTTPStatusError: Client error '404 Not Found' for url 'http://127.0.0.1:11435/api/chat'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+  },
+  {
+    "model": "gemma3:4b",
+    "case": "russian_genre",
+    "category": "instruction",
+    "expected": {
+      "genre": "Comedy"
+    },
+    "result": null,
+    "passed": false,
+    "json_success": false,
+    "seconds": 0.08200001600016549,
+    "error": "HTTPStatusError: Client error '404 Not Found' for url 'http://127.0.0.1:11435/api/chat'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+  },
+  {
+    "model": "gemma3:4b",
+    "case": "grounded_selection",
+    "category": "grounding",
+    "expected": {
+      "movie_id": 27
+    },
+    "result": null,
+    "passed": false,
+    "json_success": false,
+    "seconds": 0.08325605300024108,
+    "error": "HTTPStatusError: Client error '404 Not Found' for url 'http://127.0.0.1:11435/api/chat'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+  },
+  {
+    "model": "gemma3:4b",
+    "case": "unknown_movie",
+    "category": "hallucination",
+    "expected": {
+      "movie_id": null
+    },
+    "result": null,
+    "passed": false,
+    "json_success": false,
+    "seconds": 0.08492807200036623,
+    "error": "HTTPStatusError: Client error '404 Not Found' for url 'http://127.0.0.1:11435/api/chat'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+  },
+  {
+    "model": "gemma3:4b",
+    "case": "injection",
+    "category": "injection",
+    "expected": {
+      "movie_id": 11
+    },
+    "result": null,
+    "passed": false,
+    "json_success": false,
+    "seconds": 0.08056945699991047,
+    "error": "HTTPStatusError: Client error '404 Not Found' for url 'http://127.0.0.1:11435/api/chat'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+  },
+  {
+    "model": "gemma3:4b",
+    "case": "invalid_selection",
+    "category": "validation",
+    "expected": {
+      "accepted": false
+    },
+    "result": null,
+    "passed": false,
+    "json_success": false,
+    "seconds": 0.0853824889995849,
+    "error": "HTTPStatusError: Client error '404 Not Found' for url 'http://127.0.0.1:11435/api/chat'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+  },
+  {
+    "model": "gemma3:4b",
+    "case": "valid_selection",
+    "category": "validation",
+    "expected": {
+      "accepted": true
+    },
+    "result": null,
+    "passed": false,
+    "json_success": false,
+    "seconds": 0.08160547700026655,
+    "error": "HTTPStatusError: Client error '404 Not Found' for url 'http://127.0.0.1:11435/api/chat'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+  },
+  {
+    "model": "gemma3:4b",
+    "case": "duplicate_selection",
+    "category": "validation",
+    "expected": {
+      "accepted": false
+    },
+    "result": null,
+    "passed": false,
+    "json_success": false,
+    "seconds": 0.0791671770002722,
+    "error": "HTTPStatusError: Client error '404 Not Found' for url 'http://127.0.0.1:11435/api/chat'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+  }
+]

@@ -1,0 +1,19 @@
+{
+  "checks": {
+    "full_test_suite": true,
+    "five_agent_scenarios": true,
+    "independent_validator": true,
+    "real_model_probes": true,
+    "six_recommenders_evaluated": true,
+    "api_health": true,
+    "http_agent_and_trajectory": true,
+    "sandbox_probes": true,
+    "continuous_monitor": true,
+    "eight_diagrams": true,
+    "pdf_rendered": true,
+    "trained_checkpoint": true
+  },
+  "all_local_checks_passed": true,
+  "remote_publication": "not published; add the repository URL before submission",
+  "report_sha256": "b8e56633fac80ce6358597650be7327e155e29207f18b5975696f29c77a310d0"
+}

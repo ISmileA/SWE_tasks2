@@ -1,0 +1,21 @@
+{
+  "split": "global timestamp 70/15/15; ties kept together",
+  "threshold": 4,
+  "k": 10,
+  "seed": 42,
+  "train": 69997,
+  "validation": 15003,
+  "test": 15000,
+  "users": 943,
+  "items": 1682,
+  "available_at_train_cutoff": 1654,
+  "train_max_timestamp": 887039164,
+  "excluded_train_positive_release_conflicts": 43,
+  "validation_min_timestamp": 887039271,
+  "validation_max_timestamp": 891036414,
+  "test_min_timestamp": 891036423,
+  "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+  "cpu_count": 16,
+  "memory_total": 8008667136,
+  "dataset_sha256": "06416e597f82b7342361e41163890c81036900f418ad91315590814211dca490"
+}

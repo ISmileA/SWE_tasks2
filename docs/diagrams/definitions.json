@@ -1,0 +1,420 @@
+[
+  {
+    "file": "01-landscape",
+    "title": "01 / C4 System Landscape",
+    "nodes": [
+      [
+        "u",
+        "Student / viewer\n[Person]",
+        0.4,
+        5.7
+      ],
+      [
+        "c",
+        "CineAgents\n[Software system]",
+        5.3,
+        5.7
+      ],
+      [
+        "o",
+        "Local Ollama\n[Software system]",
+        10.2,
+        5.7
+      ],
+      [
+        "d",
+        "Developer / evaluator\n[Person]",
+        0.4,
+        2
+      ],
+      [
+        "g",
+        "GroupLens / MovieLens\n[External system]",
+        5.3,
+        2
+      ],
+      [
+        "r",
+        "Git repository + report\n[External system]",
+        10.2,
+        2
+      ]
+    ],
+    "edges": [
+      [
+        "u",
+        "c",
+        "Requests recommendations"
+      ],
+      [
+        "c",
+        "o",
+        "Local structured inference"
+      ],
+      [
+        "g",
+        "c",
+        "Versioned research data"
+      ],
+      [
+        "d",
+        "c",
+        "Runs experiments"
+      ],
+      [
+        "d",
+        "r",
+        "Versions evidence"
+      ],
+      [
+        "c",
+        "r",
+        "Exports artifacts"
+      ]
+    ]
+  },
+  {
+    "file": "02-context",
+    "title": "02 / C4 System Context",
+    "nodes": [
+      [
+        "u",
+        "Viewer\n[Person]",
+        0.4,
+        4
+      ],
+      [
+        "s",
+        "CineAgents\n[System of interest]",
+        5.3,
+        4
+      ],
+      [
+        "m",
+        "Local model serving\n[External system]",
+        10.2,
+        5.7
+      ],
+      [
+        "g",
+        "GroupLens dataset\n[External system]",
+        10.2,
+        2
+      ],
+      [
+        "e",
+        "Authors / examiner\n[Person]",
+        0.4,
+        1.5
+      ]
+    ],
+    "edges": [
+      [
+        "u",
+        "s",
+        "Film request + preferences"
+      ],
+      [
+        "s",
+        "m",
+        "Grounded JSON decisions"
+      ],
+      [
+        "g",
+        "s",
+        "Historical ratings + metadata"
+      ],
+      [
+        "e",
+        "s",
+        "Tests, traces, PDF evidence"
+      ]
+    ]
+  },
+  {
+    "file": "03-containers",
+    "title": "03 / C4 Containers (logical processes and stores)",
+    "nodes": [
+      [
+        "a",
+        "Local HTTP proxy\n[Python process]",
+        0.4,
+        5.7
+      ],
+      [
+        "b",
+        "API + LangGraph\n[Sandbox process]",
+        5.3,
+        5.7
+      ],
+      [
+        "l",
+        "Inference gateway + Ollama\n[Linux processes]",
+        10.2,
+        5.7
+      ],
+      [
+        "d",
+        "MovieLens + checkpoint\n[Read-only files]",
+        0.4,
+        2
+      ],
+      [
+        "m",
+        "User memory\n[SQLite store]",
+        5.3,
+        2
+      ],
+      [
+        "o",
+        "Events / metrics / alerts\n[JSONL + API]",
+        10.2,
+        2
+      ]
+    ],
+    "edges": [
+      [
+        "a",
+        "b",
+        "HTTP over UNIX socket"
+      ],
+      [
+        "b",
+        "l",
+        "Bounded UNIX socket"
+      ],
+      [
+        "d",
+        "b",
+        "Train-only model + catalogue"
+      ],
+      [
+        "b",
+        "m",
+        "Scoped TTL reads/writes"
+      ],
+      [
+        "b",
+        "o",
+        "Spans and decisions"
+      ]
+    ]
+  },
+  {
+    "file": "04-components",
+    "title": "04 / C4 Components inside API + LangGraph",
+    "nodes": [
+      [
+        "g",
+        "DecisionModel + ModelRouter\n[Routing component]",
+        0.4,
+        5.7
+      ],
+      [
+        "p",
+        "Planner\n[Agent component]",
+        5.3,
+        5.7
+      ],
+      [
+        "t",
+        "Recommender tool\n[Retrieval component]",
+        10.2,
+        5.7
+      ],
+      [
+        "m",
+        "Memory adapter\n[Persistence component]",
+        0.4,
+        2
+      ],
+      [
+        "c",
+        "Curator\n[Agent component]",
+        5.3,
+        2
+      ],
+      [
+        "v",
+        "Validator + final checks\n[Verification component]",
+        10.2,
+        2
+      ]
+    ],
+    "edges": [
+      [
+        "g",
+        "p",
+        "Budget + model"
+      ],
+      [
+        "p",
+        "t",
+        "Typed retrieval plan"
+      ],
+      [
+        "t",
+        "c",
+        "Grounded candidates"
+      ],
+      [
+        "c",
+        "v",
+        "k selected IDs"
+      ],
+      [
+        "v",
+        "m",
+        "Accepted episode"
+      ],
+      [
+        "m",
+        "p",
+        "Preferences + episodes"
+      ]
+    ]
+  },
+  {
+    "file": "05-code",
+    "title": "05 / C4 Code view - implemented class relationships",
+    "nodes": [
+      [
+        "a",
+        "AgentSystem\nrun / graph nodes",
+        5.3,
+        5.7
+      ],
+      [
+        "r",
+        "ModelRouter\nmodel(role, complexity)",
+        0.4,
+        5.7
+      ],
+      [
+        "l",
+        "OllamaInference\ngenerate(JSON schema)",
+        10.2,
+        5.7
+      ],
+      [
+        "m",
+        "Memory\npreferences / episodes",
+        0.4,
+        2
+      ],
+      [
+        "e",
+        "Recommender + TwoTower\nrecommend / scores",
+        5.3,
+        2
+      ],
+      [
+        "o",
+        "Observer\nspan / event / alert",
+        10.2,
+        2
+      ]
+    ],
+    "edges": [
+      [
+        "r",
+        "a",
+        "Provides model ID"
+      ],
+      [
+        "a",
+        "l",
+        "Calls typed inference"
+      ],
+      [
+        "a",
+        "m",
+        "Reads/writes scoped data"
+      ],
+      [
+        "a",
+        "e",
+        "Calls retrieval"
+      ],
+      [
+        "a",
+        "o",
+        "Emits correlated events"
+      ]
+    ]
+  },
+  {
+    "file": "06-dynamic",
+    "title": "06 / C4 Dynamic - successful request and repair path",
+    "nodes": [
+      [
+        "r",
+        "1. Route decision\nconfidence + budget",
+        0.4,
+        5.7
+      ],
+      [
+        "p",
+        "2. Planner\nmethod + genre",
+        5.3,
+        5.7
+      ],
+      [
+        "t",
+        "3. Retrieval\nfilter seen + availability",
+        10.2,
+        5.7
+      ],
+      [
+        "f",
+        "6. Finalize\nstore evidence + result",
+        0.4,
+        2
+      ],
+      [
+        "c",
+        "4. Curator\nselect k IDs",
+        5.3,
+        2
+      ],
+      [
+        "v",
+        "5. Validator\nGemma + hard checks",
+        10.2,
+        2
+      ]
+    ],
+    "edges": [
+      [
+        "r",
+        "p",
+        "1. Route"
+      ],
+      [
+        "p",
+        "t",
+        "2. Execute plan"
+      ],
+      [
+        "t",
+        "c",
+        "3. Candidate evidence"
+      ],
+      [
+        "c",
+        "v",
+        "4. Audit"
+      ],
+      [
+        "v",
+        "f",
+        "5. If accepted"
+      ],
+      [
+        "v",
+        "c",
+        "Reject: repair at most once"
+      ]
+    ]
+  }
+]

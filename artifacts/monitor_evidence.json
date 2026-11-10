@@ -1,0 +1,19 @@
+[
+  {
+    "time": 1794340292.1720254,
+    "name": "monitor.health",
+    "trace_id": "429d34ef7d4d41adbee7280a2978323f",
+    "status": "ready"
+  },
+  {
+    "time": 1794340292.174215,
+    "name": "monitor.probe",
+    "trace_id": "429d34ef7d4d41adbee7280a2978323f",
+    "span_id": "506cdc3f9de64bdf8ad5e1a5ba75839f",
+    "parent_span_id": null,
+    "status": "ok",
+    "error_type": null,
+    "duration_seconds": 0.23666775099991355,
+    "attributes": {}
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "checks": {
+    "host_home_absent": true,
+    "windows_mount_absent": true,
+    "source_readonly": true,
+    "external_network_blocked": true,
+    "inference_gateway_reachable": true,
+    "model_download_endpoint_denied": true,
+    "capabilities_dropped": true,
+    "pid_namespace": true
+  },
+  "all_passed": true,
+  "pid": 2,
+  "mount_namespace": "mnt:[4026532300]",
+  "network_namespace": "net:[4026532374]"
+}

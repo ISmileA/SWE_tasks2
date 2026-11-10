@@ -1,0 +1,77 @@
+{
+  "gemma3:1b": {
+    "cases": 8,
+    "accuracy": 0.5,
+    "json_rate": 1.0,
+    "latency_p50_seconds": 1.9442936879999024,
+    "latency_p95_seconds": 7.216452561550087,
+    "by_category": {
+      "grounding": 1.0,
+      "hallucination": 1.0,
+      "injection": 0.0,
+      "instruction": 1.0,
+      "reasoning": 0.0,
+      "validation": 0.3333333333333333
+    }
+  },
+  "gemma3:4b": {
+    "cases": 8,
+    "accuracy": 0.875,
+    "json_rate": 1.0,
+    "latency_p50_seconds": 3.3654027625000253,
+    "latency_p95_seconds": 20.768192274000043,
+    "by_category": {
+      "grounding": 1.0,
+      "hallucination": 1.0,
+      "injection": 1.0,
+      "instruction": 1.0,
+      "reasoning": 1.0,
+      "validation": 0.6666666666666666
+    }
+  },
+  "qwen3.5:0.8b": {
+    "cases": 8,
+    "accuracy": 0.75,
+    "json_rate": 1.0,
+    "latency_p50_seconds": 1.7773552945002393,
+    "latency_p95_seconds": 11.290207728949955,
+    "by_category": {
+      "grounding": 1.0,
+      "hallucination": 1.0,
+      "injection": 0.0,
+      "instruction": 1.0,
+      "reasoning": 1.0,
+      "validation": 0.6666666666666666
+    }
+  },
+  "qwen3:0.6b": {
+    "cases": 8,
+    "accuracy": 0.625,
+    "json_rate": 1.0,
+    "latency_p50_seconds": 1.0710544489999165,
+    "latency_p95_seconds": 6.28036218425005,
+    "by_category": {
+      "grounding": 1.0,
+      "hallucination": 1.0,
+      "injection": 0.0,
+      "instruction": 1.0,
+      "reasoning": 1.0,
+      "validation": 0.3333333333333333
+    }
+  },
+  "qwen3:1.7b": {
+    "cases": 8,
+    "accuracy": 0.75,
+    "json_rate": 1.0,
+    "latency_p50_seconds": 1.4193197170000076,
+    "latency_p95_seconds": 10.552854718000052,
+    "by_category": {
+      "grounding": 1.0,
+      "hallucination": 1.0,
+      "injection": 0.0,
+      "instruction": 1.0,
+      "reasoning": 1.0,
+      "validation": 0.6666666666666666
+    }
+  }
+}

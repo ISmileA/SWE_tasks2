@@ -1,0 +1,16 @@
+.venv/
+.venv-linux/
+__pycache__/
+.pytest_cache/
+*.pyc
+runtime/
+data/ml-100k/
+data/*.zip
+models/
+output/
+vendor/
+artifacts/*.pt
+!artifacts/two_tower.pt
+runtime-*/
+output/pdf/preview/
+output/CineAgents.bundle

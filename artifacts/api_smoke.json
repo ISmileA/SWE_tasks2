@@ -1,0 +1,156 @@
+{
+  "health": {
+    "status": "ready",
+    "missing_models": [],
+    "neural_loaded": true,
+    "catalogue_size": 1682,
+    "rss_bytes": 382488576
+  },
+  "two_tower_recommendations": [
+    {
+      "movie_id": 423,
+      "title": "E.T. the Extra-Terrestrial (1982)",
+      "genres": [
+        "Children's",
+        "Drama",
+        "Fantasy",
+        "Sci-Fi"
+      ],
+      "score": 6.0439348220825195,
+      "method": "two_tower",
+      "requested_method": "two_tower",
+      "fallback_reason": null,
+      "source": "MovieLens 100K"
+    },
+    {
+      "movie_id": 286,
+      "title": "English Patient, The (1996)",
+      "genres": [
+        "Drama",
+        "Romance",
+        "War"
+      ],
+      "score": 5.809093475341797,
+      "method": "two_tower",
+      "requested_method": "two_tower",
+      "fallback_reason": null,
+      "source": "MovieLens 100K"
+    },
+    {
+      "movie_id": 275,
+      "title": "Sense and Sensibility (1995)",
+      "genres": [
+        "Drama",
+        "Romance"
+      ],
+      "score": 5.724764347076416,
+      "method": "two_tower",
+      "requested_method": "two_tower",
+      "fallback_reason": null,
+      "source": "MovieLens 100K"
+    },
+    {
+      "movie_id": 318,
+      "title": "Schindler's List (1993)",
+      "genres": [
+        "Drama",
+        "War"
+      ],
+      "score": 5.548064231872559,
+      "method": "two_tower",
+      "requested_method": "two_tower",
+      "fallback_reason": null,
+      "source": "MovieLens 100K"
+    },
+    {
+      "movie_id": 588,
+      "title": "Beauty and the Beast (1991)",
+      "genres": [
+        "Animation",
+        "Children's",
+        "Musical"
+      ],
+      "score": 5.537795066833496,
+      "method": "two_tower",
+      "requested_method": "two_tower",
+      "fallback_reason": null,
+      "source": "MovieLens 100K"
+    }
+  ],
+  "unknown_tool_status": 400,
+  "invalid_request_status": 422,
+  "metrics_status": 200,
+  "openapi_status": 200,
+  "memory_put": 200,
+  "agent": {
+    "status": "ok",
+    "trace_id": "8c01d25cfa9f4a7b976f0a48d2b79dd3",
+    "recommendations": [
+      {
+        "movie_id": 173,
+        "title": "Princess Bride, The (1987)",
+        "genres": [
+          "Action",
+          "Adventure",
+          "Comedy",
+          "Romance"
+        ],
+        "score": 191.0,
+        "method": "popularity",
+        "requested_method": "two_tower",
+        "fallback_reason": "no_positive_train_history",
+        "source": "MovieLens 100K",
+        "explanation": "Каталог MovieLens: Action, Adventure, Comedy, Romance; метод popularity."
+      },
+      {
+        "movie_id": 204,
+        "title": "Back to the Future (1985)",
+        "genres": [
+          "Comedy",
+          "Sci-Fi"
+        ],
+        "score": 180.0,
+        "method": "popularity",
+        "requested_method": "two_tower",
+        "fallback_reason": "no_positive_train_history",
+        "source": "MovieLens 100K",
+        "explanation": "Каталог MovieLens: Comedy, Sci-Fi; метод popularity."
+      },
+      {
+        "movie_id": 168,
+        "title": "Monty Python and the Holy Grail (1974)",
+        "genres": [
+          "Comedy"
+        ],
+        "score": 176.0,
+        "method": "popularity",
+        "requested_method": "two_tower",
+        "fallback_reason": "no_positive_train_history",
+        "source": "MovieLens 100K",
+        "explanation": "Каталог MovieLens: Comedy; метод popularity."
+      }
+    ],
+    "plan": {
+      "method": "two_tower",
+      "genre": "Comedy"
+    },
+    "planner_model": "qwen3:0.6b",
+    "curator_model": "qwen3:1.7b",
+    "validator_model": "gemma3:4b",
+    "repairs": 0,
+    "issues": [],
+    "routing": {
+      "route": "simple",
+      "predicted_label": "simple",
+      "confidence": 0.939184014204412,
+      "probabilities": {
+        "complex": 0.05224205068551885,
+        "simple": 0.939184014204412,
+        "unsafe": 0.008573935110069172
+      },
+      "escalated": false,
+      "latency_ms": 4.473521999898367
+    }
+  },
+  "trace_events": 15
+}

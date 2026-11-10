@@ -1,0 +1,44 @@
+{
+  "popularity": {
+    "mean_ndcg_delta_vs_popularity": 0.0,
+    "paired_bootstrap_95_ci": [
+      0.0,
+      0.0
+    ]
+  },
+  "bayesian": {
+    "mean_ndcg_delta_vs_popularity": -0.0695717782002137,
+    "paired_bootstrap_95_ci": [
+      -0.09550581637749128,
+      -0.041907145912758466
+    ]
+  },
+  "content": {
+    "mean_ndcg_delta_vs_popularity": -0.01645391062875253,
+    "paired_bootstrap_95_ci": [
+      -0.03253846759588646,
+      -0.002009255365087212
+    ]
+  },
+  "item_cf": {
+    "mean_ndcg_delta_vs_popularity": 0.006107324296865531,
+    "paired_bootstrap_95_ci": [
+      -0.0006200327926820212,
+      0.013423129534386782
+    ]
+  },
+  "hybrid": {
+    "mean_ndcg_delta_vs_popularity": -0.00045876872231129305,
+    "paired_bootstrap_95_ci": [
+      -0.009385082869613363,
+      0.00804067308744681
+    ]
+  },
+  "two_tower": {
+    "mean_ndcg_delta_vs_popularity": -0.0006502984661828432,
+    "paired_bootstrap_95_ci": [
+      -0.008276468563329663,
+      0.007061967478007914
+    ]
+  }
+}
